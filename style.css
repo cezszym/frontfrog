@@ -1,0 +1,57 @@
+
+/* Basic styling and headers */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #f4abc4;
+    text-decoration: none;
+}
+
+body {
+    background: #333456;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2.5vw;
+    font-size: clamp(2rem, 0.8854rem + 5.0955vw, 7rem);
+}
+.mottoContainer {
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin: 5vw 0 15vw 0;
+}
+.mottoContainer h2 {
+    width: 65%;
+    font-size: clamp(1rem, 0.8885rem + 0.5096vw, 1.5rem);
+    padding: 2.5vw 2.5vw;
+    font-weight: 400;
+    text-align: center;
+    color: #7B7171;
+    border-right: 7vw solid #333456;
+    border-left: 7vw solid #333456;
+}
+
+.lessonWrapper {
+    padding: 2.5vw 2.5vw;
+    border-top: 5px solid white;
+    margin-bottom: 10vw;
+}
+
+.lessonWrapper h3 {
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        font-size: clamp(1rem, 0.7771rem + 1.0191vw, 2rem);
+}
