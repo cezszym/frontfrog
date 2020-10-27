@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     color: #f4abc4;
     text-decoration: none;
@@ -43,8 +47,10 @@ h1 {
     border-left: 7vw solid #333456;
 }
 
+/* Universal lesson and plans styling */
+
 .lessonWrapper {
-    padding: 2.5vw 2.5vw;
+    padding: 2.5vw 0;
     border-top: 5px solid white;
     margin-bottom: 10vw;
 }
@@ -55,3 +61,77 @@ h1 {
         text-align: center;
         font-size: clamp(1rem, 0.7771rem + 1.0191vw, 2rem);
 }
+
+.lessonContainer {
+    margin: 5vw 0;
+}
+
+.planCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 10px;
+    padding: 30px 0;
+    transition: .3s;
+    border-radius: 2vw;
+}
+
+.planCard:hover {
+    box-shadow: 13px 10px 17px -8px #5E609F;
+}
+
+
+.planCard .price {
+    font-size: clamp(2rem, 1.5539rem + 2.0395vw, 4rem);
+    font-weight: 800;
+}
+
+.planCard .planName {
+    color: #7B7171;
+    padding: 5px 0;
+    margin: 10px 0;
+    border-top: 1px solid #7B7171;
+    border-bottom: 1px solid #7B7171;
+    width: 60%;
+    text-align: center;
+}
+
+.planCard li {
+    color: #7B7171;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+
+.planCard .startBtn {
+    background: black;
+    color: white;
+    border-radius: 5vw;
+    width: 80%;
+    max-width: 200px;
+    padding: 10px 0;
+    margin: 3vw 0 1vw 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.planCard .startBtn:hover {
+    transform: scale(1.1);
+}
+
+/* Lesson #1 Easy take off with flexbox */
+
+.lessonOne {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.lessonOne .planCard {
+    background: #ffffff;
+    flex: 1 1 150px;
+    min-width: 100px;
+    max-width: 500px;
+}
+
