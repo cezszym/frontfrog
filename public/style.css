@@ -57,7 +57,7 @@ h1 {
 .lessonWrapper {
     padding: 2.5vw 0;
     border-top: 5px solid white;
-    margin-bottom: 10vw;
+    margin-bottom: 3vw;
     display: flex;
     flex-direction: column;
 }
@@ -171,20 +171,32 @@ h1 {
     grid-area: premium;
 }
 
+/* Lesson #3 Do you want to see a card trick */
 
-/* .lessonTwo #basicCard {
-    grid-row: 1/2;
-    grid-column: 1/3;
+.lessonThreeWrapper {
+    overflow-x: hidden;
 }
 
-.lessonTwo #standardCard {
-    grid-row: 2/3;
-    grid-column: 2/4;
+.lessonThree {
+    display: flex;
+    justify-content: center;
+    margin: 50px 30px;
 }
 
-.lessonTwo #premiumCard {
-    grid-row: 3/4;
-    grid-column: 1/3;
-} */
+.lessonThree .planCard {
+    width: 300px;
+    box-shadow: 0 0 4rem black;
+    overflow-x: hidden;
+}
 
+.lessonThree .planCard:hover {
+    transform: translateY(-2rem);
+}
 
+.lessonThree .planCard:hover~.planCard {
+    transform: translateX(130px);
+}
+
+.lessonThree .planCard:not(:first-child) {
+    margin-left: -120px;
+}
