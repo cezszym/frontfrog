@@ -180,7 +180,7 @@ h1 {
 .lessonThree {
     display: flex;
     justify-content: center;
-    margin: 5vw 30px;
+    margin: calc(5vw + 40px) 30px;
 }
 
 .lessonThree .planCard {
